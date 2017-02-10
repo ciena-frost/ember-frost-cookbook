@@ -136,7 +136,7 @@ import {expect} from 'chai'
 import {setupTest} from 'ember-mocha'
 import {afterEach, beforeEach, describe, it} from 'mocha'
 import Ember from 'ember'
-const {run, RSVP} = Ember
+const {Object: EmberObject, Service, run, RSVP} = Ember
 import sinon from 'sinon'
 
 import DomainView from 'frost-orchestrate-ui/bunsen-views/domains/detail'
@@ -169,7 +169,7 @@ describe('Unit / Route / details/domain', function () {
     let pollboy
 
     beforeEach(function () {
-      pollboy = Ember.Service.create({
+      pollboy = Service.create({
         add: sandbox.spy()
       })
 
@@ -181,7 +181,7 @@ describe('Unit / Route / details/domain', function () {
 
     describe('when poller already present', function () {
       beforeEach(function () {
-        route.set('poller', Ember.Object.create({}))
+        route.set('poller', EmberObject.create({}))
         route.activate()
       })
 
@@ -221,7 +221,7 @@ describe('Unit / Route / details/domain', function () {
   describe('.afterModel()', function () {
     beforeEach(function () {
       const model = {
-        value: Ember.Object.create({title: 'test-title'})
+        value: EmberObject.create({title: 'test-title'})
       }
       document.title = ''
       route.afterModel(model)
@@ -236,11 +236,11 @@ describe('Unit / Route / details/domain', function () {
     let pollboy, poller
 
     beforeEach(function () {
-      pollboy = Ember.Service.create({
+      pollboy = Service.create({
         remove: sandbox.spy()
       })
 
-      poller = Ember.Object.create({})
+      poller = EmberObject.create({})
 
       sandbox.spy(jQueryPrototype, 'removeClass')
 
@@ -264,11 +264,11 @@ describe('Unit / Route / details/domain', function () {
 
   describe('.getProductCount(), .getInventoryCount', function () {
     beforeEach(function () {
-      route.controller = Ember.Object.create({ model: { id: 1 } })
+      route.controller = EmberObject.create({ model: { id: 1 } })
       route.store = {
         query: () => {
           return new RSVP.Promise((resolve, reject) => {
-            resolve(Ember.Object.create({
+            resolve(EmberObject.create({
               length: 1,
               meta: {
                 total: 3
@@ -358,8 +358,8 @@ describe('Unit / Route / details/domain', function () {
         })
       }
 
-      file = Ember.Object.create(fileContents)
-      fileCopy = Ember.Object.create(_.cloneDeep(fileContents))
+      file = EmberObject.create(fileContents)
+      fileCopy = EmberObject.create(_.cloneDeep(fileContents))
       bunsenModel = detailModel(providerModel.toJSON(), 'domain')
     })
 

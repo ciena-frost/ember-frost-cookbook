@@ -4,13 +4,13 @@
 
 ```javascript
 import Ember from 'ember'
-const {Mixin, on} = Ember
+const {Mixin, Object: EmberObject, on} = Ember
 import FrostListCoreMixin from 'ember-frost-list/mixins/frost-list-core-mixin'
 
 export default Mixin.create(FrostListCoreMixin, {
   // == Event =================================================================
   initListExpansionMixin: on('init', function () {
-    this.set('expandedItems', Ember.Object.create())
+    this.set('expandedItems', EmberObject.create())
   }),
 
   // == Actions ================================================================
@@ -49,7 +49,7 @@ export default Mixin.create(FrostListCoreMixin, {
 ```javascript
 import {expect} from 'chai'
 import Ember from 'ember'
-const {Controller, Object} = Ember
+const {Controller, Object: EmberObject} = Ember
 import FrostListCoreMixin from 'ember-frost-list/mixins/frost-list-core-mixin'
 import FrostListSelectionMixin from 'ember-frost-list/mixins/frost-list-selection-mixin'
 import * as utils from 'ember-frost-list/utils/utils'
@@ -86,7 +86,7 @@ describe('Unit / Mixin / frost-list-selection-mixin', function () {
   it('sets up "selectedItems" with an empty object', function () {
     expect(
       subject.get('selectedItems')
-    ).to.eql(Object.create())
+    ).to.eql(EmberObject.create())
   })
 
   it('has the expect Mixins', function () {
