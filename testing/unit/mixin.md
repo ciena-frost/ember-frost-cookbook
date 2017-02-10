@@ -1,4 +1,4 @@
-# Recipe for: Testing an Mixin
+# Recipe for: Testing a Mixin
 
 ## The Mixin
 

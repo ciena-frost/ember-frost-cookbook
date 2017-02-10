@@ -1,4 +1,4 @@
-# Recipe for: Testing an Serializer
+# Recipe for: Testing a Serializer
 
 ## The API Response
 

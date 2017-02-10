@@ -1,4 +1,4 @@
-# Recipe for: Testing the setting properties on a component cause DOM changes
+# Recipe for: Testing that setting properties on a component cause DOM changes
 
 ## The Component Template (my-example.hbs)
 

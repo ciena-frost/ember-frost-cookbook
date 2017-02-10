@@ -1,4 +1,4 @@
-# Recipe for: Testing an Service
+# Recipe for: Testing a Service
 
 ## The Service
 

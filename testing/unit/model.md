@@ -1,4 +1,4 @@
-# Recipe for: Testing an Model
+# Recipe for: Testing a Model
 
 ## The Model
 
