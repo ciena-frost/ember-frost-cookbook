@@ -19,6 +19,7 @@ So you need to write some tests and are wanting to look at some examples.
 - How to inject a service into an integration test.
 - Testing that interacting with a component by setting properties correctly updates the DOM.
 - Validating that action handlers are wired up correctly.
+- Satisfy [ember-prop-types](https://github.com/ciena-blueplanet/ember-prop-types) `instanceOf` model constraint.
 
 ### [Unit Tests](https://github.com/ciena-frost/ember-frost-cookbook/tree/master/testing/unit)
 - Adapter
