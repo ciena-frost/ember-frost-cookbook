@@ -8,6 +8,6 @@ provide a seamless development experience.
 
 ## Versions
 
-* [Frost Foundation 2.0.0 - Ember CLI 2.12.3](https://github.com/ciena-frost/ember-frost-cookbook/tree/master/versions/2.0.0)
+* [Frost Foundation 1.1.0 - Ember CLI 2.12.3](https://github.com/ciena-frost/ember-frost-cookbook/tree/master/versions/1.1.0)
 * [Frost Foundation 1.0.0 - Ember CLI 2.12.3](https://github.com/ciena-frost/ember-frost-cookbook/tree/master/versions/1.0.0)
 
