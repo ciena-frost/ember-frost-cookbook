@@ -1,6 +1,6 @@
-# UI Platform 1.0.0 Recipes for Ember CLI 2.12.3
+# Frost Foundation 1.0.0 Recipes for Ember CLI 2.12.3
 
-These recipes are versioned in coordination with [UI Platform 1.0.0](https://github.cyanoptics.com/Frost/ciena-ui-foundation) to provide a seamless development experience.
+These recipes are versioned in coordination with [Frost Foundation 1.0.0](https://github.cyanoptics.com/Frost/ciena-ui-foundation) to provide a seamless development experience.
 
 
 ## Testing Recipes
